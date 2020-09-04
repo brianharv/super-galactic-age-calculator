@@ -59,5 +59,6 @@ export default class User {
       return false;
     }
     return solarArray;
+    // let solarArray = [.24, .62, 1.88, 11.86];
   }
 }
