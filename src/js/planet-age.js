@@ -30,7 +30,7 @@ export default class User {
     return ageConvert += this.jupiterAge; 
   }  
 
-  lifeExpect () {
+  lifeExpect() {
     let lifeEx;
     if ((this.gender === "male") && (this.age > 76)) {
       this.extraLife = this.age - 76;
@@ -42,5 +42,9 @@ export default class User {
       lifeEx = 81 - this.age;
     } 
     return lifeEx += this.earthExp;
+  }
+
+  solarLifeExpect() {
+
   }
 }
