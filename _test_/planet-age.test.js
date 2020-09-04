@@ -12,7 +12,7 @@ describe('User', () => {
 describe('ageMercury', () => {
 
   test('Method will calculate user age on Mercury', () => {
-    const newUser = new User(32, "male");
+    let newUser = new User(32, "male");
     expect(newUser.ageMercury()).toEqual(133)
   });
 });
@@ -20,7 +20,7 @@ describe('ageMercury', () => {
 describe('ageVenus', () => {
 
   test('Method will calculate user age on Venus', () => {
-    const newUser = new User(32, "male");
+    let newUser = new User(32, "male");
     expect(newUser.ageVenus()).toEqual(52);
   });
 });
@@ -28,7 +28,7 @@ describe('ageVenus', () => {
 describe('ageMars', () => {
 
   test('Method will calculate user age on Mars', () => {
-    const newUser = new User(32, "male");
+    let newUser = new User(32, "male");
     expect(newUser.ageMars()).toEqual(17);
   });
 });
@@ -36,14 +36,21 @@ describe('ageMars', () => {
 describe('ageJupiter', () => {
 
   test('Method will calculate user age on Jupiter', () => {
-    const newUser = new User(32, "male");
+    let newUser = new User(32, "male");
     expect(newUser.ageJupiter()).toEqual(3);
   });
 });
 
 describe('lifeExpect', () => {
   test('Method will calculate years let to live, in Earth years, for user', () => {
-    const newUser = new User(32, "male");
+    let newUser = new User(32, "male");
     expect(newUser.lifeExpect()).toEqual(44);
   });
 });
+
+describe('lifeExpect', () => {
+  test('Method will account for user age older than life expectancy', () => {
+    let newUser = new User(85, "male");
+    expect(newUser.lifeExpect()).toBeGreaterThan(1);
+  })
+})
