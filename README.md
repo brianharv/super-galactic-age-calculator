@@ -63,7 +63,7 @@ Expect: (newUser.lifeExpect()).toBeGreaterThan(0); <br>
 <hr>
 Spec 7: <br>
 Describe: lifeExpect(); <br>
-Test: Method is account for user's beyond average life expectancy. <br>
+Test: Method will account for user's beyond average life expectancy. <br>
 Code: let newUser = new User(age, gender); <br>
             if((this.gender === "male") && (this.age <= 76)) { <br>
                76 - this.age; <br>
