@@ -1,13 +1,14 @@
 export default class User {
-  constructor(age, gender, extraLife) {
+  constructor(age, gender, extraLife, earthExp) {
     this.age = age;
     this.gender = gender;
     this.mercuryAge = 0;
     this.venusAge = 0;
     this.marsAge = 0;
     this.jupiterAge = 0;
-    this.earthExp = 0;
-    this.extraLife = extraLife
+    this.extraLife = extraLife;
+    this.earthExp = earthExp
+    
   }
 
   ageMercury() {
@@ -45,6 +46,18 @@ export default class User {
   }
 
   solarLifeExpect() {
-
+    let solarArray = [.24, .62, 1.88, 11.86];
+    if (this.earthExp > 0) {
+      solarArray.forEach(function(element) {
+        earthExp / element;
+      });
+    } else if (this.extraLife > 0) {
+      solarArray.forEach(function(element) {
+        extraLife / element;
+      });
+    } else {
+      return false;
+    }
+    return solarArray;
   }
 }
