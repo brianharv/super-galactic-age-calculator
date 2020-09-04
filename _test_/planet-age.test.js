@@ -56,3 +56,10 @@ describe('lifeExpect', () => {
     expect(newUser2.extraLife).toEqual(11);
   })
 })
+
+describe('lifeExpect', () => {
+  test('Method will show life expectancy of user on various planets', () => {
+    let newUser = new User(65, "male", 11);
+    expect(newUser.ageVenus(lifeExpect()).toEqual(18));
+  })
+})
