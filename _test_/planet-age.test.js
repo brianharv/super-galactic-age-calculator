@@ -44,6 +44,6 @@ describe('ageJupiter', () => {
 describe('lifeExpect', () => {
   test('Method will calculate years let to live, in Earth years, for user', () => {
     const newUser = new User(32, "male");
-    expect(newUser.lifeExpect()).toBeGreaterThanOrEqualTo(0);
+    expect(newUser.lifeExpect()).toBeGreaterThanOrEqual(0);
   })
 })
