@@ -50,6 +50,7 @@ Test: Method will calculate user's age in plant years. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageJupiter(); <br>
 Expect: (newUser.age).toBe(newUser.age / 11.86); <br>
+<hr>
 
 
 
