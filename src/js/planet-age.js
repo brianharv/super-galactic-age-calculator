@@ -1,5 +1,5 @@
 export default class User {
-  constructor(age, gender) {
+  constructor(age, gender, extraLife) {
     this.age = age;
     this.gender = gender;
     this.mercuryAge = 0;
@@ -7,7 +7,7 @@ export default class User {
     this.marsAge = 0;
     this.jupiterAge = 0;
     this.earthExp = 0;
-    this.extraLife = 0
+    this.extraLife = extraLife
   }
 
   ageMercury() {

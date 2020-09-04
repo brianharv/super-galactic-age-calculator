@@ -50,8 +50,7 @@ describe('lifeExpect', () => {
 
 describe('lifeExpect', () => {
   test('Method will account for user age older than life expectancy', () => {
-    let newUser = new User(85, "male");
-    extraLife = 0;
+    let newUser = new User(85, "male", 9);
     expect(newUser.extraLife).toEqual(9);
   });
 });
