@@ -6,7 +6,8 @@ export default class User {
     this.venusAge = 0;
     this.marsAge = 0;
     this.jupiterAge = 0;
-    this.earthExp = 0
+    this.earthExp = 0;
+    this.extraLife = 0
   }
 
   ageMercury() {
@@ -31,11 +32,15 @@ export default class User {
 
   lifeExpect () {
     let lifeEx;
-    if(this.gender === "male") {
+    if ((this.gender === "male") && (this.age > 76)) {
+      this.extraLife = this.age - 76;
+    } else if ((this.gender === "female") && (this.age > 81)) {
+      this.extraLife = this.age - 81;
+    } else if (this.gender === "male") {
       lifeEx = 76 - this.age;
     } else if (this.gender === "female") {
       lifeEx = 81 - this.age;
-    }
+    } 
     return lifeEx += this.earthExp;
   }
 }
