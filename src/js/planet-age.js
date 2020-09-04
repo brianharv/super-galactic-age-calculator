@@ -5,8 +5,7 @@ export default class User {
     this.mercuryAge = 0;
   }
   ageMercury() {
-  let ageConvert = this.age / .24;
-  System.out.println(Math.round(ageConvert));
+  let ageConvert = Math.round(this.age / .24);
     return ageConvert += this.mercuryAge;
   }
 }
