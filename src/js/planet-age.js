@@ -49,11 +49,11 @@ export default class User {
     let solarArray = [.24, .62, 1.88, 11.86];
     if (this.earthExp > 0) {
       solarArray.forEach(function(element) {
-        earthExp / element;
+        this.earthExp / element;
       });
     } else if (this.extraLife > 0) {
       solarArray.forEach(function(element) {
-        extraLife / element;
+        this.extraLife / element;
       });
     } else {
       return false;
