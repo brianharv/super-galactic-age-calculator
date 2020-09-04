@@ -57,9 +57,9 @@ describe('lifeExpect', () => {
   })
 })
 
-describe('lifeExpect', () => {
+describe('solarLifeExpect', () => {
   test('Method will show life expectancy of user on various planets', () => {
-    let newUser = new User(65, "male", 11);
-    expect(newUser.ageVenus(11)).toEqual(18);
+    let newUser = new User(65, "male")
+    expect(newUser.solLifeExpect()).toEqual(18);
   })
 })
