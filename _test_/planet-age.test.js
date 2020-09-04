@@ -14,5 +14,13 @@ describe('ageMercury', () => {
   test('Method will calculate user age on Mercury', () => {
     const newUser = new User(32, "male");
     expect(newUser.ageMercury()).toEqual(133)
+  });
+});
+
+describe('ageVenus', () => {
+
+  test('Method will calculate user age on Venus', () => {
+    const newUser = new User(32, "male");
+    expect(newUser.ageVenus()).toEqual(52)
   })
 })
