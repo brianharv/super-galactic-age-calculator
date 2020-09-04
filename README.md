@@ -77,6 +77,7 @@ Code: let newUser = new User(age, gender); <br>
                alert(`Wow! ${extra} years past life expectancy!`);<br>
 Expect: (newUser.lifeExpect()).toBeGreaterThan(0).or.toBe(extra); <br>
 
+<hr>
 
 
 
