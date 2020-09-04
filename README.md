@@ -24,33 +24,59 @@ Code: let newUser = new User(age, gender);
 Expect: (newUser).toBeInstanceOf(User). <br>
 <hr>
 Spec 2: <br>
-Describe: ageMercury <br>
+Describe: ageMercury(); <br>
 Test: Method will calculate user's age in plant years. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageMercury(); <br>
 Expect: (newUser.age).toBe(newUser.age / 0.24); <br>
 <hr>
 Spec 3: <br>
-Describe: ageVenus <br>
+Describe: ageVenus(); <br>
 Test: Method will calculate user's age in plant years. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageVenus(); <br>
 Expect: (newUser.age).toBe(newUser.age / .62); <br>
 <hr>
 Spec 4: <br>
-Describe: ageMars <br>
+Describe: ageMars(); <br>
 Test: Method will calculate user's age in plant years. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageMars(); <br>
 Expect: (newUser.age).toBe(newUser.age / 1.88); <br>
 <hr>
 Spec 5: <br>
-Describe: ageJupiter <br>
+Describe: ageJupiter(); <br>
 Test: Method will calculate user's age in plant years. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageJupiter(); <br>
 Expect: (newUser.age).toBe(newUser.age / 11.86); <br>
 <hr>
+Spec 6: <br>
+Describe: lifeExpect(); <br>
+Test: Method will calculate user's years let to live, in Earth years. <br>
+Code: let newUser = new User(age, gender); <br>
+            if(this.gender === "male") { <br>
+               76 - this.age; <br>
+            } else if (this.gender === "female") { <br>
+              81 - this.age; <br>
+Expect: (newUser.lifeExpect()).toBeGreaterThan(0); <br>
+<hr>
+Spec 6: <br>
+Describe: lifeExpect(); <br>
+Test: Method is account for user's beyond average life expectancy. <br>
+Code: let newUser = new User(age, gender); <br>
+            if((this.gender === "male") && (this.age <= 76)) { <br>
+               76 - this.age; <br>
+            } else if (this.gender === "female") && (this.age < 81) { <br>
+              81 - this.age; <br>
+            else if ((this.gender === "male") && (this.age > 76) {<br>
+               let extra = this.age - 76; <br>
+               alert(`Wow! ${extra} years past life expectancy!`); <br>
+            else if ((this.gender === "female") && (this.age > 81) {<br>
+               let extra = this.age - 81; <br>
+               alert(`Wow! ${extra} years past life expectancy!`);<br>
+Expect: (newUser.lifeExpect()).toBeGreaterThan(0).or.toBe(extra); <br>
+
 
 
 
