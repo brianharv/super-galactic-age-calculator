@@ -61,7 +61,7 @@ Code: let newUser = new User(age, gender); <br>
               81 - this.age; <br>
 Expect: (newUser.lifeExpect()).toBeGreaterThan(0); <br>
 <hr>
-Spec 6: <br>
+Spec 7: <br>
 Describe: lifeExpect(); <br>
 Test: Method is account for user's beyond average life expectancy. <br>
 Code: let newUser = new User(age, gender); <br>
@@ -92,10 +92,14 @@ _For any questions or feedback, feel free to [contact me](mailto:brian.harv3y@gm
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _Javascript_
+* _jQuery_
+* _Jest_
+* _webpack_
+
 
 ### License
 
 *_This application operates under the GPL license._*
 
-Copyright (c) 2016 **_Brian Harvey_**
+Copyright (c) 2020 **_Brian Harvey_**
