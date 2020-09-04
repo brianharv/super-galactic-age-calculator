@@ -1,11 +1,12 @@
 export default class User {
   constructor(age, gender) {
     this.age = age;
-    this.gender = gender
+    this.gender = gender;
     this.mercuryAge = 0;
     this.venusAge = 0;
     this.marsAge = 0;
-    this.jupiterAge = 0
+    this.jupiterAge = 0;
+    this.earthExp = 0
   }
 
   ageMercury() {
@@ -29,6 +30,12 @@ export default class User {
   }  
 
   lifeExpect () {
-    
+    let lifeEx;
+    if(this.gender === "male") {
+      lifeEx = 76 - this.age;
+    } else if (this.gender === "female") {
+      lifeEx = 81 - this.age;
+    }
+    return lifeEx += this.earthExp;
   }
 }
