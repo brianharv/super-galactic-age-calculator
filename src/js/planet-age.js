@@ -4,7 +4,8 @@ export default class User {
     this.gender = gender
     this.mercuryAge = 0;
     this.venusAge = 0;
-    this.marsAge = 0
+    this.marsAge = 0;
+    this.jupiterage = 0
   }
 
   ageMercury() {
