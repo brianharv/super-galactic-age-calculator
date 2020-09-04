@@ -77,10 +77,10 @@ Code: let newUser = new User(age, gender); <br>
 Expect: (newUser.lifeExpect()).toBeGreaterThan(0).or.toBe(extra); <br>
 <hr>
 Spec 8: <br>
-Describe: lifeExpect(); <br>
+Describe: solarLifeExpect(); <br>
 Test: Method will show life expectancy of user on various planets. <br>
 Code: let newUser = new User(65, male, 11); <br>
-Expect: newUser.ageVenus(lifeExpect()).toEqual(18); <br>
+Expect: newUser.solarLifeExpect().toEqual(18); <br>
 
 
 <hr>
