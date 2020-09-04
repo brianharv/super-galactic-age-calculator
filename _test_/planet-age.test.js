@@ -38,5 +38,12 @@ describe('ageJupiter', () => {
   test('Method will calculate user age on Jupiter', () => {
     const newUser = new User(32, "male");
     expect(newUser.ageJupiter()).toEqual(3);
+  });
+});
+
+describe('lifeExpect', () => {
+  test('Method will calculate years let to live, in Earth years, for user', () => {
+    const newUser = new User(32, "male");
+    expect(newUser.lifeExpect()).toBeGreaterThanOrEqualTo(0);
   })
 })

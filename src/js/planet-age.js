@@ -27,4 +27,8 @@ export default class User {
     let ageConvert = Math.round(this.age / 11.86);
     return ageConvert += this.jupiterAge; 
   }  
+
+  lifeExpect () {
+    
+  }
 }
