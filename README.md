@@ -14,7 +14,6 @@ _Each planet in the solar system has a different length solar year. This applica
 * _Open project folder in VS Code or other code editor._
 * _Drag index.html to web browser or copy file URL and past in web browser URL bar._
 
-__
 
 ## Specs
 Spec 1: <br>
