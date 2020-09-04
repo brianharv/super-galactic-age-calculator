@@ -11,6 +11,7 @@ export default class User {
   }
 
   ageVenus() {
-    
+    let ageConvert = Math.round(this.age / .62);
+    return ageConvert += this.mercuryAge;  
   }
 }

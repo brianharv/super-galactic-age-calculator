@@ -21,6 +21,6 @@ describe('ageVenus', () => {
 
   test('Method will calculate user age on Venus', () => {
     const newUser = new User(32, "male");
-    expect(newUser.ageVenus()).toBeGreaterThan(0);
+    expect(newUser.ageVenus()).toEqual(52);
   })
 })
