@@ -44,9 +44,10 @@ export default class User {
     } 
     return lifeEx += this.earthExp;
   }
+}
 
-  solarLifeExpect() {
-    let solarArray = [.24, .62, 1.88, 11.86];
+/*
+let solarArray = [.24, .62, 1.88, 11.86];
     if (this.earthExp > 0) {
       solarArray.forEach(function(element) {
         this.earthExp / element;
@@ -60,5 +61,4 @@ export default class User {
     }
     return solarArray;
     // let solarArray = [.24, .62, 1.88, 11.86];
-  }
-}
+    */
