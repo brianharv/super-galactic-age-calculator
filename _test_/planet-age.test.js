@@ -13,6 +13,6 @@ describe('ageMercury', () => {
 
   test('Method will calculate user age on Mercury', () => {
     const newUser = new User(32, "male");
-    expect(newUser.ageMercury()).not.toBe(32);
+    expect(newUser.ageMercury()).toEqual(133.33)
   })
 })
