@@ -25,28 +25,28 @@ Expect: (newUser).toBeInstanceOf(User). <br>
 <hr>
 Spec 2: <br>
 Describe: ageMercury(); <br>
-Test: Method will calculate user's age in plant years. <br>
+Test: Method will calculate user's age on Mercury. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageMercury(); <br>
 Expect: (newUser.age).toBe(newUser.age / 0.24); <br>
 <hr>
 Spec 3: <br>
 Describe: ageVenus(); <br>
-Test: Method will calculate user's age in plant years. <br>
+Test: Method will calculate user's age on Venus. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageVenus(); <br>
 Expect: (newUser.age).toBe(newUser.age / .62); <br>
 <hr>
 Spec 4: <br>
 Describe: ageMars(); <br>
-Test: Method will calculate user's age in plant years. <br>
+Test: Method will calculate user's age on Mars. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageMars(); <br>
 Expect: (newUser.age).toBe(newUser.age / 1.88); <br>
 <hr>
 Spec 5: <br>
 Describe: ageJupiter(); <br>
-Test: Method will calculate user's age in plant years. <br>
+Test: Method will calculate user's age on Jupiter. <br>
 Code: let newUser = new User(age, gender); <br>
             newUser.ageJupiter(); <br>
 Expect: (newUser.age).toBe(newUser.age / 11.86); <br>
