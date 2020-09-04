@@ -6,5 +6,13 @@ describe('User', () => {
     const newUser = new User(32, "male");
     expect(newUser.age).toEqual(32);
     expect(newUser.gender).toBe("male");
-  });
+  });  
 });
+
+describe('ageMercury', () => {
+
+  test('Method will calculate user age on Mercury', () => {
+    const newUser = new User(32, "male");
+    expect(newUser.ageMercury()).toEqual(number);
+  })
+})
