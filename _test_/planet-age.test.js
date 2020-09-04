@@ -60,6 +60,6 @@ describe('lifeExpect', () => {
 describe('lifeExpect', () => {
   test('Method will show life expectancy of user on various planets', () => {
     let newUser = new User(65, "male", 11);
-    expect(newUser.lifeExpect(65).ageVenus(11)).toEqual(18);
+    expect(newUser.ageVenus(11)).toEqual(18);
   })
 })
