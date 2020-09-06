@@ -41,12 +41,14 @@ export default class User {
       lifeEx = 76 - this.age;
     } else if (this.gender === "female") {
       lifeEx = 81 - this.age;
-    } 
-    return lifeEx += this.earthExp;
+    } else {
+      lifeEx += this.earthExp; 
+
+    }
   }
 }
 
-/*
+
 let solarArray = [.24, .62, 1.88, 11.86];
     if (this.earthExp > 0) {
       solarArray.forEach(function(element) {
@@ -61,4 +63,4 @@ let solarArray = [.24, .62, 1.88, 11.86];
     }
     return solarArray;
     // let solarArray = [.24, .62, 1.88, 11.86];
-    */
+    
