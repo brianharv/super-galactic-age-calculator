@@ -34,33 +34,34 @@ export default class User {
   lifeExpect() {
     let lifeEx;
     if ((this.gender === "male") && (this.age > 76)) {
-      this.extraLife = this.age - 76;
+      return this.extraLife = this.age - 76;
     } else if ((this.gender === "female") && (this.age > 81)) {
-      this.extraLife = this.age - 81;
+       return this.extraLife = this.age - 81;
     } else if (this.gender === "male") {
-      lifeEx = 76 - this.age;
+      return lifeEx = 76 - this.age;
     } else if (this.gender === "female") {
-      lifeEx = 81 - this.age;
+      return lifeEx = 81 - this.age;
     } else {
-      lifeEx += this.earthExp; 
+      return lifeEx += this.earthExp; 
 
     }
   }
-}
 
 
-let solarArray = [.24, .62, 1.88, 11.86];
+  solarLifeExpect() {
+  let solarArray = [.24, .62, 1.88, 11.86];
+//const solarExpectt = []
     if (this.earthExp > 0) {
       solarArray.forEach(function(element) {
-        this.earthExp / element;
+        Math.round(this.earthExp / element);
       });
     } else if (this.extraLife > 0) {
       solarArray.forEach(function(element) {
-        this.extraLife / element;
+        Math.round(this.extraLife / element);
       });
     } else {
       return false;
     }
-    return solarArray;
-    // let solarArray = [.24, .62, 1.88, 11.86];
-    
+    return solarArray;    
+  }  // let solarArray = [.24, .62, 1.88, 11.86];
+}    
