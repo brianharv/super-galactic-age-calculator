@@ -32,17 +32,16 @@ export default class User {
   }  
 
   lifeExpect() {
-    let lifeEx;
     if ((this.gender === "male") && (this.age > 76)) {
       return this.extraLife = this.age - 76;
     } else if ((this.gender === "female") && (this.age > 81)) {
        return this.extraLife = this.age - 81;
     } else if (this.gender === "male") {
-      return lifeEx = 76 - this.age;
+      return this.earthExp = 76 - this.age;
     } else if (this.gender === "female") {
-      return lifeEx = 81 - this.age;
+      return this.earthExp = 81 - this.age;
     } else {
-      return lifeEx += this.earthExp; 
+      return this.earthExp; 
 
     }
   }
@@ -50,7 +49,6 @@ export default class User {
 
   solarLifeExpect() {
   let solarArray = [.24, .62, 1.88, 11.86];
-//const solarExpectt = []
     if (this.earthExp > 0) {
       solarArray.forEach(function(element) {
         Math.round(this.earthExp / element);
