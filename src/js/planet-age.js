@@ -42,24 +42,23 @@ export default class User {
       return this.earthExp = 81 - this.age;
     } else {
       return this.earthExp; 
-
     }
   }
 
 
   solarLifeExpect() {
   let solarArray = [.24, .62, 1.88, 11.86];
-    if (this.earthExp > 0) {
+  const that = this;
+    if (that.earthExp > 0) {
       solarArray.forEach(function(element) {
-        Math.round(this.earthExp / element);
+        Math.round(that.earthExp / element);
       });
-    } else if (this.extraLife > 0) {
+    } else if (that.extraLife > 0) {
       solarArray.forEach(function(element) {
-        Math.round(this.extraLife / element);
+        Math.round(that.extraLife / element);
       });
     } else {
       return false;
-    }
-    return solarArray;    
+    }   
   }  // let solarArray = [.24, .62, 1.88, 11.86];
 }    
