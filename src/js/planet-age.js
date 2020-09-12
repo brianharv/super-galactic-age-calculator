@@ -63,14 +63,3 @@ export default class User {
        }     
   }
 }      
- // solarArray.forEach(function(element) {
-     //   Math.round(that.earthExp / element);
-
-//    } else if (that.extraLife > 0) {
-//      solarArray.forEach(function(element) {
-//        Math.round(that.extraLife / element);
-//      });
-//    } else {
-//      return false;
-//   
-//
