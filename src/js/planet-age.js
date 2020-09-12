@@ -48,16 +48,16 @@ export default class User {
 
   solarLifeExpect() {
   let solarArray = [.24, .62, 1.88, 11.86];
-  let solarLifeExpect = [];
+  let solarExpect = [];
   const that = this;
     if (that.earthExp > 0) {
       solarArray.forEach(function(element) {
-           solarLifeExpect.push(Math.round(that.earthExp / element));
-      }); return solarLifeExpect;     
+           solarExpect.push(Math.round(that.earthExp / element));
+      }); return solarExpect;     
       } else if (that.extraLife > 0) {
          solarArray.forEach(function(element) {
-           solarLifeExpect.push(Math.round(that.extraLife / element));
-         }); return solarLifeExpect;
+           solarExpect.push(Math.round(that.extraLife / element));
+         }); return solarExpect;
        } else {
          return false;
        }     
