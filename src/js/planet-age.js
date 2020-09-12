@@ -48,17 +48,29 @@ export default class User {
 
   solarLifeExpect() {
   let solarArray = [.24, .62, 1.88, 11.86];
+  let solarLifeExpect = [];
   const that = this;
     if (that.earthExp > 0) {
       solarArray.forEach(function(element) {
-        Math.round(that.earthExp / element);
-      });
-    } else if (that.extraLife > 0) {
-      solarArray.forEach(function(element) {
-        Math.round(that.extraLife / element);
-      });
-    } else {
-      return false;
-    }   
-  }  // let solarArray = [.24, .62, 1.88, 11.86];
-}    
+           solarLifeExpect.push(Math.round(that.earthExp / element));
+      }); return solarLifeExpect;     
+      } else if (that.extraLife > 0) {
+         solarArray.forEach(function(element) {
+           solarLifeExpect.push(Math.round(that.extraLife / element));
+         }); return solarLifeExpect;
+       } else {
+         return false;
+       }     
+  }
+}      
+ // solarArray.forEach(function(element) {
+     //   Math.round(that.earthExp / element);
+
+//    } else if (that.extraLife > 0) {
+//      solarArray.forEach(function(element) {
+//        Math.round(that.extraLife / element);
+//      });
+//    } else {
+//      return false;
+//   
+//
